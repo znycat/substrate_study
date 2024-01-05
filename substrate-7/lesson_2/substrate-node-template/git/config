@@ -1,0 +1,10 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+[remote "origin"]
+	url = https://github.com/substrate-developer-hub/substrate-node-template.git
+	fetch = +refs/tags/polkadot-v0.9.40:refs/tags/polkadot-v0.9.40
