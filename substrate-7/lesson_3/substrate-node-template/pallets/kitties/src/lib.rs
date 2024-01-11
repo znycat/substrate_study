@@ -10,13 +10,17 @@ pub use pallet::*;
 
 #[frame_support::pallet]
 pub mod pallet {
-	use frame_support::pallet_prelude::{OptionQuery, *};
+	use frame_support::pallet_prelude::*;
 	use frame_system::pallet_prelude::*;
 
-	use frame_support::traits::Randomness;
+	// ReservableCurrency 质押
+	use frame_support::traits::{Currency, Randomness, ReservableCurrency};
 	use sp_io::hashing::blake2_128;
 
 	pub type KittyId = u32;
+	pub type BalanceOf<T> =
+		<<T as Config>::Currency as Currency<<T as frame_system::Config>::AccountId>>::Balance;
+
 	#[derive(
 		Clone, Encode, Decode, RuntimeDebug, PartialEq, Eq, Default, TypeInfo, MaxEncodedLen,
 	)]
@@ -31,6 +35,9 @@ pub mod pallet {
 		/// Because this pallet emits events, it depends on the runtime's definition of an event.
 		type RuntimeEvent: From<Event<Self>> + IsType<<Self as frame_system::Config>::RuntimeEvent>;
 		type Randomness: Randomness<Self::Hash, Self::BlockNumber>;
+		type Currency: ReservableCurrency<Self::AccountId>;
+		#[pallet::constant]
+		type KittyPrice: Get<BalanceOf<Self>>;
 	}
 
 	// The pallet's runtime storage items.
@@ -51,6 +58,10 @@ pub mod pallet {
 	#[pallet::getter(fn kitty_parents)]
 	pub type KittyParents<T: Config> =
 		StorageMap<_, Blake2_128Concat, KittyId, (KittyId, KittyId), OptionQuery>;
+
+	#[pallet::storage]
+	#[pallet::getter(fn kitty_on_sale)]
+	pub type KittyOnSale<T: Config> = StorageMap<_, Blake2_128Concat, KittyId, ()>;
 
 	// Pallets use events to inform users when important changes are made.
 	// https://docs.substrate.io/main-docs/build/events-errors/
@@ -74,6 +85,14 @@ pub mod pallet {
 			recipient: T::AccountId,
 			kitty_id: KittyId,
 		},
+		KittyOnSafe {
+			who: T::AccountId,
+			kitty_id: KittyId,
+		},
+		KittyBought {
+			who: T::AccountId,
+			kitty_id: KittyId,
+		},
 	}
 
 	// Errors inform users that something went wrong.
@@ -82,6 +101,9 @@ pub mod pallet {
 		InvalidKittyId,
 		SameKittyId,
 		NotKittyOwner,
+		AlreadyOnSale,
+		AlreadyOwned,
+		NotOnSale,
 	}
 
 	// Dispatchable functions allows users to interact with the pallet and invoke state changes.
@@ -101,6 +123,11 @@ pub mod pallet {
 
 			let kitty_id = Self::get_next_id()?;
 			let kitty = Kitty(Self::random_value(&who));
+
+			let price = T::KittyPrice::get();
+			// 等价于
+			// T::Currency::reserve(&who, price)?;
+			// <T as Config>::Currency::reserve(&who, price)?;
 
 			// update
 			Kitties::<T>::insert(kitty_id, &kitty);
@@ -165,6 +192,48 @@ pub mod pallet {
 			KittyOwner::<T>::insert(kitty_id, &recipient);
 
 			Self::deposit_event(Event::KittyTransferred { who, recipient, kitty_id });
+			Ok(())
+		}
+
+		#[pallet::call_index(3)]
+		#[pallet::weight(10_000 + T::DbWeight::get().writes(1).ref_time())]
+		pub fn sale(origin: OriginFor<T>, kitty_id: KittyId) -> DispatchResult {
+			let who = ensure_signed(origin)?;
+
+			Self::kitty_owner(kitty_id)
+				.ok_or::<DispatchError>(Error::<T>::InvalidKittyId.into())?;
+
+			ensure!(Self::kitty_owner(kitty_id) == Some(who.clone()), Error::<T>::NotKittyOwner);
+			ensure!(Self::kitty_on_sale(kitty_id).is_some(), Error::<T>::AlreadyOnSale);
+
+			<KittyOnSale<T>>::insert(kitty_id, ());
+			Self::deposit_event(Event::KittyOnSafe { who, kitty_id });
+
+			Ok(())
+		}
+
+		#[pallet::call_index(4)]
+		#[pallet::weight(10_000 + T::DbWeight::get().writes(1).ref_time())]
+		pub fn buy(origin: OriginFor<T>, kitty_id: KittyId) -> DispatchResult {
+			let who = ensure_signed(origin)?;
+			Self::kitty_owner(kitty_id)
+				.ok_or::<DispatchError>(Error::<T>::InvalidKittyId.into())?;
+
+			Self::kitties(kitty_id).ok_or::<DispatchError>(Error::<T>::InvalidKittyId.into())?;
+
+			let owner = Self::kitty_owner(kitty_id)
+				.ok_or::<DispatchError>(Error::<T>::InvalidKittyId.into())?;
+			ensure!(owner != who, Error::<T>::AlreadyOwned);
+			ensure!(Self::kitty_on_sale(kitty_id).is_some(), Error::<T>::NotOnSale);
+
+			let price = T::KittyPrice::get();
+			T::Currency::reserve(&who, price)?;
+			T::Currency::unreserve(&owner, price);
+
+			<KittyOwner<T>>::insert(kitty_id, &who);
+			<KittyOnSale<T>>::remove(kitty_id);
+			Self::deposit_event(Event::KittyBought { who, kitty_id });
+
 			Ok(())
 		}
 	}
