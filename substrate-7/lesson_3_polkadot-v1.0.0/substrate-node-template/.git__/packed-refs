@@ -1,0 +1,92 @@
+# pack-refs with: peeled fully-peeled sorted 
+a5881669b816a6d06b80a007ccbc9fe45c3a6794 refs/remotes/origin/al3mart/substrate-master
+f1099434f26425d798a8dc2bff5bcdcbcb698a21 refs/remotes/origin/alexd10s/how-to-storage-migration-example
+ee8a0281b7b65fcb5670e76cb852c184405e85c6 refs/remotes/origin/autoupdate_polkadot-v0.9.28_2022-09-30_07-53-39
+f0da5527960ac92c5d9086c5ff427e86520cc431 refs/remotes/origin/autoupdate_polkadot-v0.9.29_2022-09-07_13-25-36
+31d83026fbcc3f92bfdf7ade2b656ab102cde8dc refs/remotes/origin/autoupdate_polkadot-v0.9.29_2022-09-30_07-54-21
+d4e528fefa838ab86d59825694832fbc972a45e3 refs/remotes/origin/autoupdate_polkadot-v0.9.30_2022-09-28_12-57-56
+c8de90cfc98656ccfef0851e53f77e027fd5a3b6 refs/remotes/origin/autoupdate_polkadot-v0.9.31_2022-10-19_18-22-17
+08af78e92756a58caef23af643c0fc57099e81ad refs/remotes/origin/autoupdate_polkadot-v0.9.34_2022-12-06_11-24-47
+2cd4b4cc78c30aab7d2fc2b7c86c293597c3e3a2 refs/remotes/origin/build-substrate-workshop
+1c35db2d6c65e99a9b045050bb02ead419fa8e5f refs/remotes/origin/dependabot/cargo/clap-4.4.10
+822f7be2f877c456892808a573691e3b061d0afa refs/remotes/origin/dependabot/cargo/jsonrpsee-0.20.3
+7c2556ff6f353319b5b31cd0aefe1731cbc4da9e refs/remotes/origin/dependabot/cargo/quinn-proto-0.9.5
+8e064bb337f4eb8807b3b4b9f96e76ded0bc7660 refs/remotes/origin/dependabot/cargo/rustix-0.36.16
+d416781399bce9cd75bca52e949b470996570f60 refs/remotes/origin/dependabot/cargo/rustls-webpki-0.101.4
+89909c90dbb7402a40ad1e679bc3b81afd05b387 refs/remotes/origin/dependabot/github_actions/actions/checkout-4
+e228bf3283caf6fbb0886779ebc235522ff1a818 refs/remotes/origin/dependabot/github_actions/docker/build-push-action-5
+06258ce19e1f7852c1e804a0192a472bc87b7b4e refs/remotes/origin/dependabot/github_actions/docker/login-action-3.0.0
+f6eee63f30689bc211f461faa6788acc211dbb98 refs/remotes/origin/ds/poe-example
+41ad4a6c9d712ac4b6e16e79a8b3837af8234f46 refs/remotes/origin/main
+bf5ad6824b1b1a25c5c6b54bbf636856127632d4 refs/remotes/origin/playground/front-end-template
+f6a3c184ed76451e41aefb1836a7be667277e490 refs/remotes/origin/sl/new-kitties-solution
+363207b8c360848b2915a32a560dd9dd42a22349 refs/remotes/origin/sl/seminar/pallet-basics
+df3ede215cedb12693373f5098306eb0bc4f2eb5 refs/remotes/origin/tutorials/solutions/add-a-pallet
+aabf0add87414e72dbec26e3bf0bf3da47f250a7 refs/remotes/origin/tutorials/solutions/kitties
+dcc4e7bb48abc480518d7aba6ff92f80e70245f6 refs/remotes/origin/tutorials/solutions/permissioned-network
+e42e246a077069b789fb40d3fb3e12fdff92f0de refs/remotes/origin/tutorials/solutions/proof-of-existence
+e2fc588c94bddb8c59185b03b0132eb9ad7086d0 refs/remotes/origin/tutorials/solutions/runtime-upgrade
+3dd3b348b34b30a633daf2627f930ace8fcb80c0 refs/tags/monthly-2021-11
+4369e88c9bd11f47849392e0b1632b865e0d942a refs/tags/monthly-2021-11-rust-2021
+^b74af51fe22917bf5324343a6e0749719cf1fa86
+7ce49b86b32fe088a91a2dabfd4194ac63c1f8f0 refs/tags/monthly-2021-12
+54387e2a39db1bf927cfa9811006107a5531c258 refs/tags/polkadot-v0.9.12
+c962ed17139322f99d25ed5631ddbb5bbbced2a2 refs/tags/polkadot-v0.9.17
+7c342164629e7871b4ee3f09de3d4e130bef6543 refs/tags/polkadot-v0.9.18
+596285acac52c9be4e6b575a15d13b455647e270 refs/tags/polkadot-v0.9.19
+fbe735e456e8658b2c64445848eea5ba9be65c62 refs/tags/polkadot-v0.9.20
+c379ed54bd1b983b6377927fb9b56761a2284732 refs/tags/polkadot-v0.9.22
+681a9d8e3e8becf99aabf1cc76e1c08016db2e1a refs/tags/polkadot-v0.9.23
+9c89be106cb98f4a0ede20d8880ec63779232870 refs/tags/polkadot-v0.9.24
+de262935ede20d1afc351254084d26193bebefd9 refs/tags/polkadot-v0.9.25
+d6f219c653f05aeb0663aaa05c9d6d62f93d00e4 refs/tags/polkadot-v0.9.26
+69ee6aa64671ec89904b0d1328ee5bdb58a831ee refs/tags/polkadot-v0.9.27
+d89bff8292215d29798e2f99df7e1034af81ebf0 refs/tags/polkadot-v0.9.28
+1974a62ee0e20c42699c408d0a5944cbe5cd5485 refs/tags/polkadot-v0.9.29
+6c701fa6109693a955bb1fa317d8b724634e0fa7 refs/tags/polkadot-v0.9.30
+378a3e5ae41df1af0ef1a66b2076342bce678688 refs/tags/polkadot-v0.9.31
+f0234dd79ac796085bef649d43e95d4b617ffdfd refs/tags/polkadot-v0.9.32
+71cad6ec672737ad865202d6e73c87e2dfc00fc7 refs/tags/polkadot-v0.9.34
+10e62ab60c74a3c3a8b3e18bb0afc74f13ef17ec refs/tags/polkadot-v0.9.35
+6ddc88d5b2e85c18a0a7220019bc7ad77da16448 refs/tags/polkadot-v0.9.36
+d79d8cef20bd45ef3961ad1ef3c9a7d677a5e29c refs/tags/polkadot-v0.9.37
+d67d92de1be2d9526638dc665c825b5e245cbcd9 refs/tags/polkadot-v0.9.39
+700c3a186e55d0d6542c564ccff17260238ed752 refs/tags/polkadot-v0.9.40
+8b6fe6666d589486dd541663a32ffd98f2e21d74 refs/tags/pre-v2.0-3e65111
+3d36a178dbff579916384e87dd8e4c2ce85a30e9 refs/tags/tut-sol/add-a-pallet/latest
+^b4bba5df0db6b4cff089ad021bdd5ee32d1ca670
+a4602c3092b438bc038bfb2e633922e69797d09c refs/tags/tut-sol/add-a-pallet/monthly-2021-10
+^b4bba5df0db6b4cff089ad021bdd5ee32d1ca670
+fd1382538c8a4ee2c10fcfe6f3a7420ccf5ff882 refs/tags/tut-sol/proof-of-existence/latest
+^773d72752f3598e5d405b48c6f716f4153c95070
+99d936352c8549964eeec1e9e80fa203e6e99827 refs/tags/tut-sol/proof-of-existence/monthly-2021-10
+^773d72752f3598e5d405b48c6f716f4153c95070
+87b1b4728e29f68c6b2bafde7f3d0f4c8af9b302 refs/tags/v0.9.40
+5cd3d42aeddb203f4f18aa6f64195df90e5edb07 refs/tags/v1.5.0
+655bfdc6fc922d117849cbcf808ee5bf2dfa1d53 refs/tags/v2.0.0
+5b41f0b1562a97281294647721410de7f2b24b19 refs/tags/v2.0.0-alpha.3
+8e78af6b9bb6c95c127caa01632d2c5267a57a30 refs/tags/v2.0.0-alpha.5
+^da88e4aa4fb273894460fe1499717ffb0b02960b
+6c1d11508cb8d3809e7b80606ce404ecfd5a85e4 refs/tags/v2.0.0-alpha.6
+e7f3167e973e84dfe8808ec9a4a375f0d6b1a23b refs/tags/v2.0.0-alpha.7
+38058f3ef02cf783db2f2447e3f0a05f41b867d3 refs/tags/v2.0.0-alpha.8
+131195352b7069c662199d354e245d424d426b8d refs/tags/v2.0.0-rc1
+83d715754757b706be0ab962fe5f24bbefc39c0a refs/tags/v2.0.0-rc2
+f5acce1e680a8964400561726ad1024b6316160b refs/tags/v2.0.0-rc3
+8f769dbd971c44f0ca6747fa1595f6e6a7e57c64 refs/tags/v2.0.0-rc5
+c9fda53e31bd9d755aa057a04ba7e80fd13e4d6e refs/tags/v2.0.0-rc6
+fcd577e8172e9589db8b7a7f9bc6af3f53f9a879 refs/tags/v2.0.0-rc6+1
+687cec4b83443e1421c994c12d64649faac3136b refs/tags/v2.0.1
+^571448fb41388d2f4b1859fd3922ef623c3dcce6
+29480e75408b02e4b956def6f210f7c116d643f1 refs/tags/v3.0.0
+^8370ddd69caf4fe8c6251b99b2f6f3ea0008de8e
+89d171a1676dd786680664b21c94de044a44a642 refs/tags/v3.0.0+1
+^fc9d24c429d271ec7d4f5075b8a7ec700c721a87
+687d4ceceb414f02bf8d8c7c2a781a580acb7962 refs/tags/v3.0.0+monthly-2021-05
+^12d56a762168440bf80632a7c561b996375d83fa
+05c363cff88a0816b82b9224a0882520573f1389 refs/tags/v3.0.0+monthly-2021-07
+^64f5744e99a803188786f058580590e3cfd625d2
+38d20deac58161157f732ca95a08be6370b98b69 refs/tags/v3.0.0+monthly-2021-08
+^e5366c11cca3c416f6c4b4747a6f083fc370fac8
+bf528143a5758a30609af3db7ecbd5acc989195e refs/tags/v3.0.0+monthly-2021-09+1
+865c0c01f234ed57cc525fecdebca2da9d507e8b refs/tags/v3.0.0+monthly-2021-10
