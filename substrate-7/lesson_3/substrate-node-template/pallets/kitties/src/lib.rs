@@ -42,7 +42,7 @@ pub mod pallet {
 		type Currency: Currency<Self::AccountId>;
 		#[pallet::constant]
 		type KittyPrice: Get<BalanceOf<Self>>;
-		type PalletID: Get<PalletId>;
+		type PalletId: Get<PalletId>;
 	}
 
 	// The pallet's runtime storage items.
@@ -280,7 +280,7 @@ pub mod pallet {
 		}
 
 		fn get_account_id() -> T::AccountId {
-			T::PalletID::get().into_account_truncating()
+			T::PalletId::get().into_account_truncating()
 		}
 	}
 }
