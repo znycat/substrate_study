@@ -1,0 +1,27 @@
+41ad4a6c9d712ac4b6e16e79a8b3837af8234f46		branch 'main' of https://github.com/substrate-developer-hub/substrate-node-template
+a5881669b816a6d06b80a007ccbc9fe45c3a6794	not-for-merge	branch 'al3mart/substrate-master' of https://github.com/substrate-developer-hub/substrate-node-template
+f1099434f26425d798a8dc2bff5bcdcbcb698a21	not-for-merge	branch 'alexd10s/how-to-storage-migration-example' of https://github.com/substrate-developer-hub/substrate-node-template
+ee8a0281b7b65fcb5670e76cb852c184405e85c6	not-for-merge	branch 'autoupdate_polkadot-v0.9.28_2022-09-30_07-53-39' of https://github.com/substrate-developer-hub/substrate-node-template
+f0da5527960ac92c5d9086c5ff427e86520cc431	not-for-merge	branch 'autoupdate_polkadot-v0.9.29_2022-09-07_13-25-36' of https://github.com/substrate-developer-hub/substrate-node-template
+31d83026fbcc3f92bfdf7ade2b656ab102cde8dc	not-for-merge	branch 'autoupdate_polkadot-v0.9.29_2022-09-30_07-54-21' of https://github.com/substrate-developer-hub/substrate-node-template
+d4e528fefa838ab86d59825694832fbc972a45e3	not-for-merge	branch 'autoupdate_polkadot-v0.9.30_2022-09-28_12-57-56' of https://github.com/substrate-developer-hub/substrate-node-template
+c8de90cfc98656ccfef0851e53f77e027fd5a3b6	not-for-merge	branch 'autoupdate_polkadot-v0.9.31_2022-10-19_18-22-17' of https://github.com/substrate-developer-hub/substrate-node-template
+08af78e92756a58caef23af643c0fc57099e81ad	not-for-merge	branch 'autoupdate_polkadot-v0.9.34_2022-12-06_11-24-47' of https://github.com/substrate-developer-hub/substrate-node-template
+2cd4b4cc78c30aab7d2fc2b7c86c293597c3e3a2	not-for-merge	branch 'build-substrate-workshop' of https://github.com/substrate-developer-hub/substrate-node-template
+1c35db2d6c65e99a9b045050bb02ead419fa8e5f	not-for-merge	branch 'dependabot/cargo/clap-4.4.10' of https://github.com/substrate-developer-hub/substrate-node-template
+822f7be2f877c456892808a573691e3b061d0afa	not-for-merge	branch 'dependabot/cargo/jsonrpsee-0.20.3' of https://github.com/substrate-developer-hub/substrate-node-template
+7c2556ff6f353319b5b31cd0aefe1731cbc4da9e	not-for-merge	branch 'dependabot/cargo/quinn-proto-0.9.5' of https://github.com/substrate-developer-hub/substrate-node-template
+8e064bb337f4eb8807b3b4b9f96e76ded0bc7660	not-for-merge	branch 'dependabot/cargo/rustix-0.36.16' of https://github.com/substrate-developer-hub/substrate-node-template
+d416781399bce9cd75bca52e949b470996570f60	not-for-merge	branch 'dependabot/cargo/rustls-webpki-0.101.4' of https://github.com/substrate-developer-hub/substrate-node-template
+89909c90dbb7402a40ad1e679bc3b81afd05b387	not-for-merge	branch 'dependabot/github_actions/actions/checkout-4' of https://github.com/substrate-developer-hub/substrate-node-template
+e228bf3283caf6fbb0886779ebc235522ff1a818	not-for-merge	branch 'dependabot/github_actions/docker/build-push-action-5' of https://github.com/substrate-developer-hub/substrate-node-template
+06258ce19e1f7852c1e804a0192a472bc87b7b4e	not-for-merge	branch 'dependabot/github_actions/docker/login-action-3.0.0' of https://github.com/substrate-developer-hub/substrate-node-template
+f6eee63f30689bc211f461faa6788acc211dbb98	not-for-merge	branch 'ds/poe-example' of https://github.com/substrate-developer-hub/substrate-node-template
+bf5ad6824b1b1a25c5c6b54bbf636856127632d4	not-for-merge	branch 'playground/front-end-template' of https://github.com/substrate-developer-hub/substrate-node-template
+f6a3c184ed76451e41aefb1836a7be667277e490	not-for-merge	branch 'sl/new-kitties-solution' of https://github.com/substrate-developer-hub/substrate-node-template
+363207b8c360848b2915a32a560dd9dd42a22349	not-for-merge	branch 'sl/seminar/pallet-basics' of https://github.com/substrate-developer-hub/substrate-node-template
+df3ede215cedb12693373f5098306eb0bc4f2eb5	not-for-merge	branch 'tutorials/solutions/add-a-pallet' of https://github.com/substrate-developer-hub/substrate-node-template
+aabf0add87414e72dbec26e3bf0bf3da47f250a7	not-for-merge	branch 'tutorials/solutions/kitties' of https://github.com/substrate-developer-hub/substrate-node-template
+dcc4e7bb48abc480518d7aba6ff92f80e70245f6	not-for-merge	branch 'tutorials/solutions/permissioned-network' of https://github.com/substrate-developer-hub/substrate-node-template
+e42e246a077069b789fb40d3fb3e12fdff92f0de	not-for-merge	branch 'tutorials/solutions/proof-of-existence' of https://github.com/substrate-developer-hub/substrate-node-template
+e2fc588c94bddb8c59185b03b0132eb9ad7086d0	not-for-merge	branch 'tutorials/solutions/runtime-upgrade' of https://github.com/substrate-developer-hub/substrate-node-template
