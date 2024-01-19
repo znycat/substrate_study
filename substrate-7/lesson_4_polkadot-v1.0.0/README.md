@@ -6,6 +6,7 @@
 
 ![01](01.png)
 
+https://github.com/znycat/substrate_study/blob/main/substrate-7/lesson_4_polkadot-v1.0.0/substrate-node-template/pallets/offchain/src/lib.rs
 
 
 ```
