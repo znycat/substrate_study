@@ -181,6 +181,14 @@ pub fn new_full(config: Configuration) -> Result<TaskManager, ServiceError> {
 		})?;
 
 	if config.offchain_worker.enabled {
+		let keystore = keystore_container.keystore();
+		sp_keystore::Keystore::sr25519_generate_new(
+			&*keystore,
+			node_template_runtime::pallet_offchain::KEY_TYPE,
+			Some("//Alice"),
+		)
+		.expect("Creating key with account Alice should succeed.");
+
 		task_manager.spawn_handle().spawn(
 			"offchain-workers-runner",
 			"offchain-worker",
