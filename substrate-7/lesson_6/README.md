@@ -4,6 +4,9 @@
 ```
 $ cargo build --release --features runtime-benchmarks
 
+https://github.com/znycat/substrate_study/blob/main/substrate-7/lesson_6/play-substrate/pallets/poe/src/benchmarking.rs
+
+https://github.com/cole8401/substrate-advanced/blob/main/lesson6/第一题/weights.rs
 ```
 ![1-01](1-01.png)
 
