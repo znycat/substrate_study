@@ -1,0 +1,7 @@
+# pack-refs with: peeled fully-peeled sorted 
+12e38f0a42f88d54813ac5e30fecaa707bfa64d7 refs/remotes/origin/benchmark-node-template
+f601fe05c8a35c086335255470c208cd208e8f5e refs/remotes/origin/contracts
+6f598cc4af101a032cc4480c29b4c92ef00b8a6d refs/remotes/origin/master
+e8599b33ba7b2dabf5a8b10a192e934473657ca6 refs/remotes/origin/polkadot-v0.9.37
+2a9c279e06543b1f8d5085da26a951033d5c5d54 refs/remotes/origin/upgrade
+237bff74ce6ad7da2272f21f8bf914b3ad544969 refs/tags/0.0.1
